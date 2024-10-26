@@ -33,7 +33,7 @@ jobs:
     # only run the code testing if linting passed
     needs: linting
     strategy:
-	  matrix:
+      matrix:
         python-version: [3.9, 3.10]
     runs-on: ubuntu-latest
     steps:
