@@ -9,6 +9,7 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
         python-version: [3.9, 3.10]
+      fail-fast: false  # Allows other jobs to complete even if one fails
 
     steps:
       - name: Check out code
