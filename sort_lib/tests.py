@@ -7,6 +7,7 @@ double_list = [19, 2]
 long_list = sample(range(-1000, 1001), 500)
 word_list = open("word_list.txt", "r").read().splitlines()
 
+
 class TestBubble:
     def test_empty(self):
         assert bubble_sort(empty_list.copy()) == sorted(empty_list.copy())
@@ -22,6 +23,7 @@ class TestBubble:
 
     def test_words(self):
         assert bubble_sort(word_list.copy()) == sorted(word_list.copy())
+
 
 class TestQuick:
     def test_empty(self):
@@ -39,6 +41,7 @@ class TestQuick:
     def test_words(self):
         assert quick_sort(word_list.copy()) == sorted(word_list.copy())
 
+
 class TestInsertion:
     def test_empty(self):
         assert insertion_sort(empty_list.copy()) == sorted(empty_list.copy())
@@ -54,4 +57,3 @@ class TestInsertion:
 
     def test_words(self):
         assert insertion_sort(word_list.copy()) == sorted(word_list.copy())
-        

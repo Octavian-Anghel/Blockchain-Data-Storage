@@ -5,6 +5,7 @@ def bubble_sort(arr):
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
     return arr
 
+
 def quick_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -13,6 +14,7 @@ def quick_sort(arr):
     middle = [x for x in arr if x == pivot]
     right = [x for x in arr if x > pivot]
     return quick_sort(left) + middle + quick_sort(right)
+
 
 def insertion_sort(arr):
     for i in range(1, len(arr)):
