@@ -5,7 +5,7 @@ empty_list = []
 single_list = [13]
 double_list = [19, 2]
 long_list = sample(range(-1000, 1001), 500)
-word_list = open("word_list.txt", "r").read().splitlines()
+word_list = open("sort_lib/word_list.txt", "r").read().splitlines()
 
 
 class TestBubble:
