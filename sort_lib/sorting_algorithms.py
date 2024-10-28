@@ -7,7 +7,7 @@ Raises: ValueError when arr is empty
 
 
 def bubble_sort(arr):
-    if (len(arr) == 0):
+    if len(arr) == 0:
         raise ValueError('Array is empty')
     for i in range(len(arr)):
         for j in range(0, len(arr) - i - 1):
@@ -25,7 +25,7 @@ Raises: ValueError if arr is empty.
 
 
 def quick_sort(arr):
-    if (len(arr) == 0):
+    if len(arr) == 0:
         raise ValueError('Array is empty')
     if len(arr) <= 1:
         return arr
@@ -45,7 +45,7 @@ Raises: ValueError if arr is empty.
 
 
 def insertion_sort(arr):
-    if (len(arr) == 0):
+    if len(arr) == 0:
         raise ValueError('Array is empty')
     for i in range(1, len(arr)):
         key = arr[i]
