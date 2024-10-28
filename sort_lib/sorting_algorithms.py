@@ -2,13 +2,13 @@
 Sorts a list of integers in ascending order using the Bubble Sort algorithm
 Args: arr (list of int): List of integers to be sorted
 Returns: sorted list of integers
-Raises: ValueError when arr is empty
+Raises: ValueError when arr is of negative size.
 """
 
 
 def bubble_sort(arr):
-    if len(arr) == 0:
-        raise ValueError('Array is empty')
+    if len(arr) < 0:
+        raise ValueError('Array is of invalid size.')
     for i in range(len(arr)):
         for j in range(0, len(arr) - i - 1):
             if arr[j] > arr[j + 1]:
@@ -25,8 +25,8 @@ Raises: ValueError if arr is empty.
 
 
 def quick_sort(arr):
-    if len(arr) == 0:
-        raise ValueError('Array is empty')
+    if len(arr) < 0:
+        raise ValueError('Array is of invalid size.')
     if len(arr) <= 1:
         return arr
     pivot = arr[len(arr) // 2]
@@ -45,8 +45,8 @@ Raises: ValueError if arr is empty.
 
 
 def insertion_sort(arr):
-    if len(arr) == 0:
-        raise ValueError('Array is empty')
+    if len(arr) < 0:
+        raise ValueError('Array is of invalid size.')
     for i in range(1, len(arr)):
         key = arr[i]
         j = i - 1
