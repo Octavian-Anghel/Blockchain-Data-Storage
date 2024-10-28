@@ -2,7 +2,7 @@
 Sorts a list of integers in ascending order using the Bubble Sort algorithm
 Args: arr (list of int): List of integers to be sorted
 Returns: sorted list of integers
-Raises: ValueError when arr is of negative size, TypeError when arr is not a list
+Raises: ValueError when arr is negative size, TypeError when arr is not list
 """
 
 
