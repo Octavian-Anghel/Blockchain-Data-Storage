@@ -3,7 +3,8 @@ repos:
     rev: v4.4.0  # Latest version at the time of writing; adjust if necessary
     hooks:
       - id: check-added-large-files  # Checks for file size limits
-
+      - id: detect-aws-credentials # Checks for aws credentials
+      
   - repo: https://github.com/psf/black
     rev: 23.3.0
     hooks:
